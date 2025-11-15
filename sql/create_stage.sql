@@ -1,0 +1,1 @@
+CREATE OR REPLACE STAGE mockaroo_stage;

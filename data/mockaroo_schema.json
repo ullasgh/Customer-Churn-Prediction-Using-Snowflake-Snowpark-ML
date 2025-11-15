@@ -1,0 +1,11 @@
+[
+  { "name": "customer_id", "type": "Row Number" },
+  { "name": "age", "type": "Number", "min": 18, "max": 80 },
+  { "name": "city", "type": "City" },
+  { "name": "plan", "type": "Custom List", "values": ["Basic", "Silver", "Gold", "Premium"] },
+  { "name": "monthly_usage", "type": "Number", "min": 0, "max": 300, "decimals": 2 },
+  { "name": "complaints", "type": "Number", "min": 0, "max": 10 },
+  { "name": "payments_missed", "type": "Number", "min": 0, "max": 5 },
+  { "name": "tenure", "type": "Number", "min": 1, "max": 60 },
+  { "name": "churn_label", "type": "Number", "min": 0, "max": 1 }
+]
