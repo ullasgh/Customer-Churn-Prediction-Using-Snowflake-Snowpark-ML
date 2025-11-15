@@ -1,6 +1,15 @@
 import streamlit as st
 from snowflake.snowpark import Session
 from snowflake.snowpark.functions import call_udf
+connection_params = {
+    "account": "<your_account>",
+    "user": "<your_user>",
+    "password": "<your_password>",
+    "role": "ACCOUNTADMIN",
+    "warehouse": "COMPUTE_WH",
+    "database": "CHURN_DB",
+    "schema": "PUBLIC"
+}
 
 session = Session.builder.configs(connection_params).create()
 

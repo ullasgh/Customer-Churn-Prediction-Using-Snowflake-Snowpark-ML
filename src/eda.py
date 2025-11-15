@@ -1,5 +1,14 @@
 from snowflake.snowpark import Session
 from snowflake.snowpark.functions import col
+connection_params = {
+    "account": "<your_account>",
+    "user": "<your_user>",
+    "password": "<your_password>",
+    "role": "ACCOUNTADMIN",
+    "warehouse": "COMPUTE_WH",
+    "database": "CHURN_DB",
+    "schema": "PUBLIC"
+}
 
 def create_session():
     connection_params = {
